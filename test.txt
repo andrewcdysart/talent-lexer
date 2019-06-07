@@ -1,0 +1,10 @@
+what = 1.0
+_omg-no-way = 2.0
+what + _omg-no-way
+_omg-no-way > what
+Character.health = 0
+1 + 2 = 3.0e1
+   // this is some comment
+/* This is a great big ol comment
+ * explaining some things about the doc!
+ */

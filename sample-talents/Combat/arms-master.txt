@@ -1,0 +1,5 @@
+// The character counts all untrained weapons as being one step higher up the familiarity/similarity scale for
+// the purposes of determining the untrained penalty when using the weapon
+For Attack {
+   ???
+}

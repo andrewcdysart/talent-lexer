@@ -1,0 +1,7 @@
+// The character doubles his Damage Bonus when calculating the damage of
+// melee attacks made with the All-out-Attack action
+Post Attack {
+   If Attack.Success And Attack.AllOutAttack {
+      Player.DamageBonus = Player.DamageBonus * 2;
+   }
+}

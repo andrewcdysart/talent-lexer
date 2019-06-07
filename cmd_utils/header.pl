@@ -1,0 +1,1 @@
+:- multifile(command/3).

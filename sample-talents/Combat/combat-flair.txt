@@ -1,0 +1,13 @@
+// The character can use his Personality bonus in place of either his Agility, Intelligence, or
+// Perception bonus (pick one) when calculating his Maximum Action Points
+Pre CalculateAp {
+   Player Choose("Substitue one of these for the purpose of calculating Action Points?",
+      "Agility",
+      "Intelligence",
+      "Perception")
+   {
+      "Agility": Player.Agility = Player.Personality;
+      "Intelligence": Player.Intelligence = Player.Personality;
+      "Perception": Player.Perception = Player.Personality;
+   }
+}

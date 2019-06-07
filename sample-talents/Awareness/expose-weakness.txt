@@ -1,0 +1,11 @@
+// The character may, as a free action upon making a successful attack test, make an Observe skill test
+// opposed against the result of his target's defense test. If he wins, add the character's Perception
+// bonus to his Damage Bonus when calculating damage for that attack.
+Post Attack {
+   If Attack.Success {
+      TestSkill("Observe");
+      Player Choose("Did the Observe check win against opponent's defense?", YesOrNo) {
+         Yes: Player.DamageBonus += Bonus(Perception);
+      }
+   }
+}
