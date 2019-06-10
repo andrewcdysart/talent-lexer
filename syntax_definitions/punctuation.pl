@@ -4,6 +4,11 @@
  * Copyright (c) 2019 Andrew Dysart
  */
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Provide names for common punctuation used %
+% in language specification                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 :- module('syntax_definitions/punctuation',
       [
          left_paren/1,

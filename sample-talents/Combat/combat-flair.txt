@@ -1,3 +1,9 @@
+/*
+ * Provided under the MIT license.
+ * See License.md for license details
+ * Copyright (c) 2019 Andrew Dysart
+ */
+
 // The character can use his Personality bonus in place of either his Agility, Intelligence, or
 // Perception bonus (pick one) when calculating his Maximum Action Points
 Pre CalculateAp {

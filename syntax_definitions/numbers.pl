@@ -4,6 +4,10 @@
  * Copyright (c) 2019 Andrew Dysart
  */
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define number literals %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 :- module('syntax_definitions/numbers',[digit/1,id_number/3]).
 digit('0').
 digit('1').
@@ -15,39 +19,6 @@ digit('6').
 digit('7').
 digit('8').
 digit('9').
-
-/*digits([X|[]],[]) :- digit(X).               % True if the last character in sequence is a digit
-digits([X|[]],[X]) :- \+ digit(X).           % True if the last character in sequence is not a
-                                             %     digit, give back the character
-digits([X|RestOfChars],UnconsumedChars) :-   % True if the last characters in sequence are not
-                                             %     digits, give back the characters
-   \+digit(X),
-   UnconsumedChars = [X|RestOfChars].
-digits([X|RestOfChars],UnconsumedChars) :-
-   digit(X),
-   digits(RestOfChars,UnconsumedChars).
-
-fraction([X|RestOfChars],UnconsumedChars) :- % True if the sequence starts with '.' and is followed by digits,
-                                             % give back non-matching characters
-   X = '.', !,
-   digits(RestOfChars,UnconsumedChars).
-fraction([],[]).                             % True for an empty sequence
-
-optional_sign([X|RestOfChars],RestOfChars) :- sign(X).
-optional_sign([X|RestOfChars],[X|RestOfChars]) :- \+ sign(X).
-exponent([X|RestOfChars],UnconsumedChars) :-
-   exponent_marker(X),
-   optional_sign(RestOfChars,NonSignChars),
-   digits(NonSignChars,UnconsumedChars).
-exponent([],[]).
-
-is_number([X|RestOfChars]) :-
-   !, digits([X|RestOfChars],NonDigitChars),
-   fraction(NonDigitChars,NonFractionChars),
-   exponent(NonFractionChars,NonExponentChars),
-   NonExponentChars = [].
-is_number(X) :- string_chars(X,Chars),
-   !, is_number(Chars).*/
 
 digits([X|[]],[X],[]) :- digit(X), !.              % True if the last character in sequence is a digit
 digits([X|[]],[],[X]) :- \+ digit(X), !.           % True if the last character in sequence is not a

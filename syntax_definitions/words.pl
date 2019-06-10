@@ -4,6 +4,12 @@
  * Copyright (c) 2019 Andrew Dysart
  */
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define letters and a rudimentary "word" identifier.         %
+% This is some of the first exploratory code on this project; %
+% as such, the is_word/1 predicate will likely be removed.    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 :- module('syntax_definitions/words',[letter/1, is_word/1]).
 letter('a').
 letter('b').

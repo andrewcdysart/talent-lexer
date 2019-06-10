@@ -1,7 +1,15 @@
+/*
+ * Provided under the MIT license.
+ * See License.md for license details
+ * Copyright (c) 2019 Andrew Dysart
+ */
+
 what = 1.0
 _omg-no-way = 2.0
 what + _omg-no-way
 _omg-no-way > what
+_omg-no-way >= what
+_omg-no-way>=what
 Character.health = 0
 1 + 2 = 3.0e1
    // this is some comment

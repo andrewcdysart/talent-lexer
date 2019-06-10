@@ -4,6 +4,10 @@
  * Copyright (c) 2019 Andrew Dysart
  */
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define string literals (incomplete) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 :- module('syntax_definitions/strings',[is_string/1]).
 :- use_module('syntax_definitions/words').
 :- use_module('syntax_definitions/numbers').

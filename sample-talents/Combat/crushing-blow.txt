@@ -1,3 +1,9 @@
+/*
+ * Provided under the MIT license.
+ * See License.md for license details
+ * Copyright (c) 2019 Andrew Dysart
+ */
+
 // The character doubles his Damage Bonus when calculating the damage of
 // melee attacks made with the All-out-Attack action
 Post Attack {

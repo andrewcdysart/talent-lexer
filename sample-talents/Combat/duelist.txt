@@ -1,3 +1,9 @@
+/*
+ * Provided under the MIT license.
+ * See License.md for license details
+ * Copyright (c) 2019 Andrew Dysart
+ */
+
 // The character gains an additional degree of success on successful Combat Style skill tests
 // while engaged in melee combat with a single opponent
 Post TestSkill("Combat Style") {

@@ -1,3 +1,9 @@
+/*
+ * Provided under the MIT license.
+ * See License.md for license details
+ * Copyright (c) 2019 Andrew Dysart
+ */
+
 // The character has honed a particular sense. The character receives a +10 bonus to Perception
 // based tests that involve or rely on the use of that Sense. This talent can be taken multiple
 // times, but only once for any sense.

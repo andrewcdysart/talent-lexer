@@ -1,3 +1,9 @@
+/*
+ * Provided under the MIT license.
+ * See License.md for license details
+ * Copyright (c) 2019 Andrew Dysart
+ */
+
 // The character can choose to use twice his Perception bonus for his Initiative Rating instead of the usual value
 Pre InitiativeRoll {
    Player Choose ( "Use Perception bonus for Initiative Rating?", YesOrNo ) {
